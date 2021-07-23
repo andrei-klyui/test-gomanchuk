@@ -26,6 +26,6 @@ class TestController extends Controller
     {
         [$products, $orders] = $this->testRepository->getResponse();
 
-        return view('statistic', compact('products', 'orders'));
+        return view('welcome', compact('products', 'orders'));
     }
 }
